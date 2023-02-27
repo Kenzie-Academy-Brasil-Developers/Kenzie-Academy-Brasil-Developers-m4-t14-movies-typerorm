@@ -9,7 +9,7 @@ import validateData from "../middlewares/validateData.middlewares";
 import validateMovieExists from "../middlewares/validateMovieExists.midlewares";
 import checkDuplicateMovieName from "../../validateDuplicatedName.middleware";
 import {
-  movieRequestSchema,
+  movieSchema,
   updateMovieSchema,
 } from "../schemas/movies.schemas";
 
@@ -17,7 +17,7 @@ const movieRoutes: Router = Router();
 
 movieRoutes.post(
   "",
-  validateData(movieRequestSchema),
+  validateData(movieSchema),
   checkDuplicateMovieName,
   createMovieController
 );
