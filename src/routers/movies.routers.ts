@@ -7,7 +7,7 @@ import {
 } from "../controllers/movies.controllers";
 import validateData from "../middlewares/validateData.middlewares";
 import validateMovieExists from "../middlewares/validateMovieExists.midlewares";
-import checkDuplicateMovieName from "../../validateDuplicatedName.middleware";
+import checkDuplicateMovieName from "../middlewares/validateDuplicateName,middlewares";
 import {
   movieSchema,
   updateMovieSchema,
